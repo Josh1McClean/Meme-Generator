@@ -1,0 +1,92 @@
+/* Style For The Page Title, Heading, & Subject Statement */
+.centered-section {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, cursive;
+}
+
+/* Style For The Subject Statement */
+.sectionp {
+    font-family: cursive;
+}
+
+/*Altered Layout For The Dark Mode Button
+/* Hide the checkbox */
+input[type=checkbox] {
+    display: none;
+}
+
+/* Style the label for the checkbox */
+input[type=checkbox]+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 30px;
+    height: 20px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: fixed;
+    /* Set to fixed positioning */
+    top: 10px;
+    /* Adjust top position */
+    right: 10px;
+    /* Adjust right position */
+    z-index: 1;
+}
+
+input[type=checkbox]+label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+input[type=checkbox]:checked+label {
+    background: darkgray;
+}
+
+input[type=checkbox]:checked+label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 13px;
+}
+
+/* Dark mode container: placement of text */
+.dark-mode-container {
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    font-family: 'Times New Roman', Times, cursive;
+}
+
+/* Dark mode label: identifier for the margin placement of text */
+.dark-mode-label {
+    margin-left: 10px;
+}
+
+/*Dark mode style for background color and text color*/
+.dark {
+    background-color: black;
+    color: white;
+}
+
+/*Style For The Submit Button*/
+.submit {
+    background-color: red;
+    color: white;
+}
+
+/*Style For The Top Half of The Web Page*/
+.bigsection {
+    background: darkgray;
+}
