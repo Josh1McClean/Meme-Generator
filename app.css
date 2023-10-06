@@ -1,16 +1,14 @@
-/* Style For The Page Title, Heading, & Subject Statement */
 .centered-section {
     text-align: center;
     padding: 20px;
     font-family: 'Times New Roman', Times, cursive;
 }
 
-/* Style For The Subject Statement */
 .sectionp {
     font-family: cursive;
 }
 
-/*Altered Layout For The Dark Mode Button
+/*Altered LAYOUT
 /* Hide the checkbox */
 input[type=checkbox] {
     display: none;
@@ -80,13 +78,11 @@ label:active:after {
     color: white;
 }
 
-/*Style For The Submit Button*/
 .submit {
     background-color: red;
     color: white;
 }
 
-/*Style For The Top Half of The Web Page*/
 .bigsection {
     background: darkgray;
 }
