@@ -1,14 +1,4 @@
-.centered-section {
-    text-align: center;
-    padding: 20px;
-    font-family: 'Times New Roman', Times, cursive;
-}
-
-.sectionp {
-    font-family: cursive;
-}
-
-/*Altered LAYOUT
+/*Dark Mode Altered Layout
 /* Hide the checkbox */
 input[type=checkbox] {
     display: none;
@@ -78,11 +68,184 @@ label:active:after {
     color: white;
 }
 
-.submit {
-    background-color: red;
+/*Creates A Consistent Baseline For Styling Web Pages Across Different Browsers.*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Styles For The Body Color*/
+.body-color {
+    background: blanchedalmond;
+}
+
+/*Styles For Header Section*/
+.header-section {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, cursive;
+}
+
+/*Styles For The Meme Container*/
+.meme-container {
+    position: relative;
+}
+
+/*Styles For Submit Button*/
+.Create {
+    background-color: tan;
     color: white;
 }
 
-.bigsection {
-    background: darkgray;
+/*Styles HTML Text*/
+html {
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 402;
+    font-size: 17px;
+    text-rendering: optimizeLegibility;
+}
+
+/*Styles h1 Text*/
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: tan;
+    font-size: 222%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/*Styles h2 Text*/
+h2 {
+    font-family: cursive;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: tan;
+    font-size: 152%;
+    letter-spacing: 1px;
+}
+
+/*Meme Gallery*/
+.meme-Gallery {
+    padding: 1%;
+}
+
+.gallery {
+    list-style: none;
+    width: 100%;
+}
+
+.meme-img {
+    display: inline-block;
+    margin: 1%;
+    width: 501px;
+    height: auto;
+    text-align: center;
+    position: relative;
+    opacity: 1;
+}
+
+img {
+    width: 500px;
+}
+
+.meme-img:hover {
+    opacity: 0.7;
+}
+
+/*Styles For The Remove Function*/
+.black-x {
+    width: 500px;
+    height: 255px;
+    content: "X";
+    position: absolute;
+    top: 51%;
+    left: 51%;
+    transform: translate(-50%, -67%);
+    font-weight: 710;
+    text-align: center;
+    font-size: 1505%;
+    opacity: 0;
+}
+
+.black-x:hover {
+    opacity: 1.7;
+    z-index: 21;
+}
+
+/*Styles For The Text*/
+.text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 510px;
+    font-size: 250%;
+    line-height: 1.1rem;
+    letter-spacing: 1.5px;
+    color: black;
+    -webkit-text-fill-color: whitesmoke;
+    -webkit-text-stroke-width: 1.8px;
+    -webkit-text-stroke-color: black;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    opacity: 1;
+}
+
+.text:hover {
+    opacity: 0.6;
+}
+
+/*Styles For The Top Text*/
+.top {
+    position: absolute;
+    top: 10px;
+    z-index: 9;
+    max-height: 50%;
+}
+
+/*Styles For The Bottom Text*/
+.bottom {
+    position: absolute;
+    bottom: 10px;
+    z-index: 9;
+    max-height: 50%;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 1200px) {}
+
+/*Small Tablet/Large iPad*/
+@media only screen and (max-width: 1023px) {}
+
+/*Large Phone To Small Tablets*/
+@media only screen and (max-width: 767px) {
+    .title {
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 280%;
+    }
+}
+
+/*Small Phones*/
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 250%;
+    }
+
+    html {
+        font-size: 90%;
+    }
+
+    img,
+    .meme-img,
+    .black-x,
+    .text {
+        width: 350;
+    }
+
+    .text {
+        font-size: 160%;
+    }
 }

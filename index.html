@@ -7,48 +7,73 @@
     <link rel="stylesheet" href="app.css">
 </head>
 
-<body>
-    <!--Page Title, Heading, & Subject Statement-->
-    <section class="bigsection">
-        <section class="centered-section">
-            <h1>YOU DREAM IT, WE MEME IT🤯💫</h1>
-            <p class="sectionp"><b>Create Beyond Expectations, Get Started Below!!</b></p>
-        </section>
-
-        <div class="dark-mode-container">
-            <div>
-                <input type="checkbox" id="switch">
-                <label for="switch"></label>
-            </div>
-            <div class="dark-mode-label">Dark Mode</div>
+<body class="body-color">
+    <div class="dark-mode-container">
+        <div>
+            <input type="checkbox" id="switch">
+            <label for="switch"></label>
         </div>
+        <div class="dark-mode-label">Dark Mode</div>
+    </div>
 
-        <form action="" id="form">
-            <div id="meme">
-                <p style="display: inline-block;"><b>Image URL:</b></p>
-                <input type="text" id="url" name="user_url" placeholder="Drop The Link For Your Meme Here."
-                    style="display: inline-block; margin-left: 177.5px; width: 900px;">
+    <!--Page Title, Heading, & Subject Statement-->
+    <section>
+        <header class="header-section">
+            <h1>YOU DREAM IT, WE MEME IT🤯💫</h1>
+            <h2><b><u>Beyond Expectations, Get Started Below!!</u></b></h2>
+        </header>
+    </section>
+
+    <!--Form For Meme Generation Inputs-->
+    <section class="form-section">
+        <form id="meme-form">
+
+            <!--Image URL Code-->
+            <div class="url-div">
+                <label for="link-pic to pic"><b>Image URL:</b></label>
+                <input type="url" id="url-images" placeholder="Drop The Link For Your Meme Here."
+                    style="display: inline-block; margin-left: 145px; width: 900px;" required>
             </div>
 
-            <div>
-                <p style="display: inline-block;"><b>Top Text:</b></p>
-                <input type="text" id="top" name="user_top"
-                    placeholder="(Optional) Place Your Spectacular Vernacular For The Top Text."
-                    style="display: inline-block; margin-left: 200px; width: 900px;">
-
+            <!--Top Text Code-->
+            <div class="top-text-div">
+                <br>
+                <label for="text-top"><b>Top Text:</b></label>
+                <input type="text" id="top-text"
+                    placeholder="(Optional) Write Your Spectacular Vernacular For The Top Text."
+                    style="display: inline-block; margin-left: 168px; width: 900px;">
+                </br>
             </div>
 
-            <div>
-                <p style="display: inline-block;"><b>bottom Text:</b></p>
-                <input type="text" id="bottom" name="user_bottom"
+            <!--Bottom Text Code-->
+            <div class="bottom-text-div">
+                <br>
+                <label for="text-bottom"><b>Bottom Text</b></label>
+                <input type="text" id="bottom-text"
                     placeholder="(Optional)Take Your Time And Rhyme For The Bottom Text."
-                    style="display: inline-block; margin-left: 177.5px; width: 900px;">
+                    style="display: inline-block; margin-left: 148px; width: 900px;">
+                </br>
             </div>
 
+            <!--Submit Button Code-->
             <div>
-                <input class="submit" type="submit" style="margin-left: 1114px;">
+                <label>&nbsp;</label>
+                <div class="submit-div">
+                    <input type="submit" class="Create" style="margin-left: 1099px;" value="Create">
+                </div>
             </div>
         </form>
+
+        <div class="line">
+
+        </div>
+    </section>
+
+    <!--Section For Meme To Be Shown-->
+    <section class="meme-Gallery">
+        <ul class="gallery">
+
+        </ul>
     </section>
 
     <script src="app.js"></script>
